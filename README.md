@@ -1,38 +1,66 @@
 # Projecte TFG - Anàlisi Predictiva de Sèries Temporals
 
-Aquest projecte explora algoritmes i models aplicats a l'anàlisi de sèries temporals, incloent-hi els models SARIMA, Holt-Winters i Prophet.
+Aquest projecte analitza diferents algoritmes i models per a la predicció de sèries temporals, incloent **SARIMA, Holt-Winters i Prophet**.
 
-L'estructura del projecte està dissenyada per a ser modular i fàcil de mantindre, amb funcions i mòduls separats per a cada tasca específica. 
-El fitxer `main.py` està pensat per seer minimalista, amb la major part de la lògica i funcionalitats implementades en els altres fitxers del projecte, presents als directoris `models/` i `utils/`.
+L'estructura està dissenyada per ser modular i fàcil de mantenir, separant les funcionalitats en mòduls específics.  
+El fitxer `main.py` actua com a punt d'entrada, delegant la major part de la lògica als mòduls dins dels directoris `models/` i `utils/`.
 
-## Descripció dels directoris i fitxers principals
+---
 
-### Arrel del Projecte (`TFG/`)
-- `main.py`: Fitxer principal per a l'execució de models i prediccions.
-- `environment.yml`: Fitxer per a crear l'entorn de Conda amb tots els paquets necessaris.
+## 🚀 **Requisits i Instal·lació**
 
-### `data/` (dades a analitzar)
-- `passatgers.csv`: Dataset principal.
-- `hipoteques.csv`: Dataset secundari.
-- `hipoteques_raw.csv`: Dataset brut, per netejar amb KNIME.
+### 🔧 **Entorn Conda**
+Per instal·lar totes les dependències recomanades:
 
-### `knime/` (workflow de KNIME)
-- `TFG.knwf`: Workflow de KNIME emprat per a la preparació de les dades.
+```bash
+conda env create -f environment.yml
+conda activate prediccions
+```
+---
 
-### `models/` (models i funcions associades)
-- `arima.py`: Implementació del model ARIMA, fent ús de la classe `ARIMA` del mòdul `pmdarima`.
-- `auto_arima.py`: Implementació del model ARIMA, fent ús del mètode `auto_arima` del mòdul `pmdarima`.
-- `holt_winters.py`: Implementació del model de suavització exponencial triple, fent ús de la classe `ExponentialSmoothing` del paquet `statsmodels`.
-- `prophet.py`: Implementació del model Prophet, fent ús del paquet `prophet`.
+## 📁 **Estructura del projecte**
 
-### `saved_models/` (models i funcions associades)
+### 🌍 **Arrel del Projecte (`TFG/`)**
+- **`main.py`** → Punt d'entrada per a l'execució de models i generació de prediccions.
+- **`environment.yml`** → Definició de l'entorn Conda amb tots els paquets necessaris.
+
+### 📊 **Dades (`data/`)**
+- **`passatgers.csv`** → Dataset principal.
+- **`hipoteques.csv`** → Dataset secundari.
+- **`hipoteques_raw.csv`** → Dades en brut (a netejar amb KNIME).
+
+### ⚙️ **Preprocessament amb KNIME (`knime/`)**
+- **`TFG.knwf`** → Workflow de KNIME per a la preparació de les dades.
+
+### 🔬 **Models predictius (`models/`)**
+- **`arima.py`** → Implementació del model ARIMA utilitzant `pmdarima.ARIMA`.
+- **`auto_arima.py`** → Implementació d'ARIMA amb selecció automàtica de paràmetres (`pmdarima.auto_arima`).
+- **`holt_winters.py`** → Implementació del model Holt-Winters (`statsmodels.ExponentialSmoothing`).
+- **`prophet.py`** → Implementació del model Prophet (`prophet`).
+
+### 💾 **Models guardats (`saved_models/`)**
 - Fitxers amb els models preentrenats.
 
-### `utils/` (scripts amb funcions auxiliars)
-- `analysis.py`: Funcions per a analitzar les dades i efectuar comprovacions.
-- `preprocessing.py`: Funcions per netejar i preparar les dades.
-- `visualization.py`: Funcions per generar gràfiques.
-- `utils`: Funcions complementàries.
+### 🛠 **Utilitats (`utils/`)**
+- **`analysis.py`** → Funcions per a l'anàlisi i validació de dades.
+- **`preprocessing.py`** → Funcions per a la neteja i preparació de dades.
+- **`visualization.py`** → Funcions per a la generació de gràfiques.
+- **`utils.py`** → Funcions auxiliars diverses.
 
-### `tex/` (eixida del document)
-- `main.pdf`: Document final.
+### 📄 **Documentació (`tex/`)**
+- **`main.pdf`** → Document final generat en LaTeX.
+
+---
+
+## 🏁 **Ús del projecte**
+Executa `main.py` per a entrenar un model i fer prediccions:
+
+```bash
+python main.py
+```
+
+---
+
+## 🔖 **Autoria**
+Aquest projecte ha estat desenvolupat per **Marc González Pastor**.  
+Llicenciat sota les condicions establertes en el fitxer [`LICENSE`](LICENSE).
