@@ -25,7 +25,7 @@ El fitxer `main.py` està pensat per seer minimalista, amb la major part de la l
 - `holt_winters.py`: Implementació del model de suavització exponencial triple, fent ús de la classe `ExponentialSmoothing` del paquet `statsmodels`.
 - `prophet.py`: Implementació del model Prophet, fent ús del paquet `prophet`.
 
-### `models/` (models i funcions associades)
+### `saved_models/` (models i funcions associades)
 - Fitxers amb els models preentrenats.
 
 ### `utils/` (scripts amb funcions auxiliars)
