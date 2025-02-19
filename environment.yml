@@ -1,4 +1,4 @@
-name: TFG
+name: prediccions
 channels:
   - conda-forge
   - defaults
