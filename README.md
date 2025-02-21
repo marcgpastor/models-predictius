@@ -1,4 +1,4 @@
-# Projecte TFG - Anàlisi Predictiva de Sèries Temporals
+# Anàlisi Predictiva de Sèries Temporals
 
 Aquest projecte analitza diferents algoritmes i models per a la predicció de sèries temporals, incloent **SARIMA, Holt-Winters i Prophet**.
 
