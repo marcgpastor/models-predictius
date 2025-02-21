@@ -47,9 +47,6 @@ conda activate prediccions
 - **`visualization.py`** → Funcions per a la generació de gràfiques.
 - **`utils.py`** → Funcions auxiliars diverses.
 
-### 📄 **Documentació (`tex/`)**
-- **`main.pdf`** → Document final generat en LaTeX.
-
 ---
 
 ## 🏁 **Ús del projecte**
