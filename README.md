@@ -2,7 +2,7 @@
 
 Aquest projecte analitza diferents algoritmes i models per a la predicció de sèries temporals, incloent **SARIMA, Holt-Winters i Prophet**.
 
-L'estructura està dissenyada per ser modular i fàcil de mantenir, separant les funcionalitats en mòduls específics.  
+L'estructura està dissenyada per ser modular i fàcil de mantindre, separant les funcionalitats en mòduls específics.  
 El fitxer `main.py` actua com a punt d'entrada, delegant la major part de la lògica als mòduls dins dels directoris `models/` i `utils/`.
 
 ---
